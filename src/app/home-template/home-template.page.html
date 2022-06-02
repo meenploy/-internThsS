@@ -1,0 +1,74 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>hotel</ion-title>
+  </ion-toolbar> </ion-header>
+<ion-content mode="ios">
+  <ion-card-header>
+    <ion-card-title>สุขใจพักกับเรา</ion-card-title>
+  </ion-card-header>
+  <ion-list lines="none" >
+      <ion-list-header lines="none" mode="md">
+          <ion-label>โรงแรมที่คุณสนใจ</ion-label>
+      </ion-list-header>
+      <ion-card mode="ios">
+        <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/256269680.jpg?k=97edf7246251432b705ae080ff39e3f894b7579f5635b2c49e92b3ac79ea6f37&o=&hp=1" />
+        <ion-card-header>
+          <ion-card-title>The Castello Resort</ion-card-title>
+          <ion-card-subtitle>เดอะ คาสเตลโล รีสอร์ท</ion-card-subtitle>
+        </ion-card-header>
+        <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/161159671.jpg?k=303338a6b1b5474e670d5b6cd98ae38bc44ad3576d9743cc516964f1aee5a679&o=&hp=1" />
+        <ion-card-header>
+          <ion-card-title>Rimtalay Resort Koh Larn</ion-card-title>
+          <ion-card-subtitle>ริมทะเล รีสอร์ท</ion-card-subtitle>
+        </ion-card-header>
+        <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/274006931.jpg?k=303773db63893319db96b8b840968d6f54620d9027a5fbcb9547174bdd568b7d&o=&hp=1" />
+        <ion-card-header>
+          <ion-card-title>Homebeach Resort</ion-card-title>
+          <ion-card-subtitle>โฮมบีช รีสอร์ท</ion-card-subtitle>
+        </ion-card-header>
+        <img src="https://pix8.agoda.net/hotelImages/1951525/-1/a9750a6c2d5cf0c30b254a788005961a.jpg?ca=8&ce=1&s=1024x768" />
+        <ion-card-header>
+          <ion-card-title>Tawaen Beach Resort</ion-card-title>
+          <ion-card-subtitle>ตาแหวน บีช รีสอร์ต</ion-card-subtitle>
+        </ion-card-header>
+        <img src="https://pix8.agoda.net/hotelImages/28133688/0/d2cc901ed61461e33e24892e79e3a981.jpg?ca=22&ce=0&s=1024x768" />
+        <ion-card-header>
+          <ion-card-title>Ma-Du-EI zen Resort</ion-card-title>
+          <ion-card-subtitle>มาดูอิเซนส์ รีสอร์ต</ion-card-subtitle>
+        </ion-card-header>
+        <img src="https://pix8.agoda.net/hotelImages/625/625224/625224_15071716470032529650.jpg?ca=4&ce=1&s=1024x768" />
+        <ion-card-header>
+          <ion-card-title>Bee Orchid Pool Villa</ion-card-title>
+          <ion-card-subtitle>บี ออร์คิด พูล วิลลา</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+  </ion-list>
+  
+</ion-content>
+<!--จองห้องพัก-->
+<ion-footer class="ion-no-border">
+  <ion-button  color="tertiary" expand="full" ><!-- แถบด้านล่าง -->
+    <ion-tabs >
+      <ion-tab-bar slot="bottom" color="tertiary">
+        <ion-tab-button  routerLink="/home">
+          <ion-icon name="golf-outline"></ion-icon>
+          <ion-label>หน้าหลัก</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button routerLink="/home">
+          <ion-icon name="file-tray-full-outline"></ion-icon>
+          <ion-label>การจองของฉัน</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button  routerLink="/select-room">
+          <ion-icon name="bookmarks-outline"></ion-icon>
+          <ion-label>รายการที่บันทึก</ion-label>
+        </ion-tab-button>
+        <ion-tab-button  routerLink="/my-account">
+          <ion-icon name="person-outline"></ion-icon>
+          <ion-label>บัญชี</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    <!-- ******************************** --></ion-button>
+</ion-footer>

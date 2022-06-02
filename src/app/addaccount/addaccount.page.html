@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-item lines="full">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button text="" icon="chevron-back-outline" color="danger"></ion-back-button>
+      </ion-buttons>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-fab-button class="fab-small" size="small" id="alignment-button" color="danger" >1</ion-fab-button>
+          </ion-col>
+          <ion-col>
+            <ion-fab-button class="fab-small" size="small" id="alignment-button" color="danger" >2</ion-fab-button>
+          </ion-col>
+          <ion-col>
+            <ion-fab-button class="fab-small" size="small" id="alignment-button" color="danger" >3</ion-fab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-item>
+</ion-header>
+
+
+<ion-content mode="ios">
+<!--ข้อมูลลูกค้า-->
+  <ion-list lines="none">
+    <br><br><ion-card-title>กรอกข้อมูลของท่าน</ion-card-title>
+      <ion-item>
+        <ion-label>ชื่อ (ภาษาอังกฤษ)*</ion-label>
+        <ion-input placeholder="Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>นามสกุล (ภาษาอังกฤษ)*</ion-label>
+        <ion-input placeholder="LName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>เบอร์โทรติดต่อ*</ion-label>
+        <ion-input placeholder="Tel"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>อีเมล*</ion-label>
+        <ion-input placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>ยืนยันอีเมล*</ion-label>
+        <ion-input placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-label>ตัวเลือกอื่นๆ สำหรับเพิ่มลงในการจอง</ion-label>
+      <ion-item>
+        <ion-label>ฉันสนใจเช่ารถยนต์</ion-label>
+        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>ฉันสนใจเช่ารถจักยานยนต์</ion-label>
+        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      </ion-item>
+      <ion-label>เวลาที่ท่านจะเดินทางถึง</ion-label>
+      <ion-item>
+        <ion-label>ระบุเวลาที่คาดว่าจะเดินทางถึง</ion-label>
+        <ion-input placeholder="(ไม่บังคับ)"></ion-input>
+      </ion-item>
+  </ion-list>
+  <ion-label></ion-label>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-button color="danger" class="ion-no-margin" expand="full" type="submit" [routerLink]="['/check-room']">ยืนยันการจองห้องพัก</ion-button>
+</ion-footer>

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-item lines="full">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button text="" icon="chevron-back-outline" color="danger"></ion-back-button>
+      </ion-buttons>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-fab-button class="fab-small" size="small" id="alignment-button" color="danger" >1</ion-fab-button>
+          </ion-col>
+          <ion-col>
+            <ion-fab-button class="fab-small" size="small" id="alignment-button" color="danger" >2</ion-fab-button>
+          </ion-col>
+          <ion-col>
+            <ion-fab-button class="fab-small" size="small" id="alignment-button" color="danger" >3</ion-fab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-item>
+</ion-header>
+<ion-content mode="ios">
+  
+  <ion-list lines="none">
+      <ion-card mode="ios">
+        <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/161159671.jpg?k=303338a6b1b5474e670d5b6cd98ae38bc44ad3576d9743cc516964f1aee5a679&o=&hp=1" />
+      </ion-card>
+      <!--เลือกห้องพักแล้วโชว์ข้อมูล-->
+      <ion-item color="tertiary">
+        <ion-label>รายละเอียดผู้เข้าพัก<br>
+          ชื่อ : Srisamon Sornmee<br>
+          Tel : 0988888888<br>
+          Email : Srisamon.s.65@gmail.com<br><br>
+          ห้องพัก Standard Queen Room <br>
+          <ion-icon name="bed-outline"></ion-icon>  1 เตียงควีนไซส์ <br>
+          <ion-icon name="wifi-outline"></ion-icon> ฟรี Wi-Fi <br>
+          <ion-icon name="fast-food-outline"></ion-icon>  ฟรีอาหารเช้า <br>
+          ยกเลิกการจองได้ฟรี <br>
+          จำนวน 1 ห้อง <br>
+        <div class="ion-text-center">
+          <br><br><h2>ราคา 2,014 บาท </h2></div></ion-label>
+      </ion-item>
+  </ion-list>
+  <ion-label></ion-label>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-button color="danger" class="ion-no-margin" expand="full" type="submit" [routerLink]="['/cart-dialog-template']">ชำระเงิน</ion-button>
+</ion-footer>

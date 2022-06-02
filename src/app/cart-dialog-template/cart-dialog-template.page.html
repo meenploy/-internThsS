@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-item lines="full">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button text="" icon="chevron-back-outline" color="danger"></ion-back-button>
+      </ion-buttons>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-fab-button class="fab-small" size="small" id="alignment-button" color="danger" >1</ion-fab-button>
+          </ion-col>
+          <ion-col>
+            <ion-fab-button class="fab-small" size="small" id="alignment-button" color="danger" >2</ion-fab-button>
+          </ion-col>
+          <ion-col>
+            <ion-fab-button class="fab-small" size="small" id="alignment-button" color="danger" >3</ion-fab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-item>
+</ion-header>
+<ion-content class="transaction" mode="ios">
+  <ion-list lines="none">
+
+    <ion-item color="tertiary" class="ion-margin-bottom">
+      <ion-avatar class="avatar-s" slot="start">
+      
+      </ion-avatar>
+      <ion-label>
+        <h2><b></b></h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-card color="tertiary">
+      <ion-card-content class="ion-no-padding">
+        <div class="ion-text-center ion-padding-top">
+          <ion-avatar slot="start" class="avatar-l center  ion-margin-bottom">
+            <img src="assets/imgs/defaultshop.png">
+          </ion-avatar>
+          <ion-label class="ion-text-center">
+            <h2><b>Rimtalay Resort Koh Larn</b></h2>
+          </ion-label>
+        </div>
+
+        <ion-item class="ion-no-padding" color="tertiary" lines="none">
+          <ion-grid class="ion-padding">
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-label>
+                  <h3 class="line-height2"><b>รายละเอียดการจ่ายเงิน</b></h3>
+                </ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-label color="medium">
+                  <h3 class="line-height2">ราคาห้องพัก</h3>
+                </ion-label>
+              </ion-col>
+              <ion-col class="ion-no-padding ion-text-right">
+                <ion-label color="medium">
+                  <h3>2,014
+                    <small>THB</small>
+                  </h3>
+                </ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-label color="medium">
+                  <h3 class="line-height2">ค่าเช่ารถจักรยานยนต์</h3>
+                </ion-label>
+              </ion-col>
+              <ion-col class="ion-no-padding ion-text-right">
+                <ion-label color="medium">
+                  <h3>300
+                    <small>THB</small>
+                  </h3>
+                </ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-label color="medium">
+                  <h3 class="line-height2">ส่วนลด</h3>
+                </ion-label>
+              </ion-col>
+              <ion-col class="ion-no-padding ion-text-right">
+                <ion-label color="medium">
+                  <h3>0
+                    <small>THB</small>
+                  </h3>
+                </ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-no-padding">
+                <ion-label color="medium">
+                  <h3 class="line-height2">ราคารวมทั้งหมด</h3>
+                </ion-label>
+              </ion-col>
+              <ion-col class="ion-no-padding ion-text-right">
+                <ion-text color="danger">
+                  <ion-label>
+                    <h3>
+                      <b>2,314
+                        <small>THB</small></b>
+                    </h3>
+                  </ion-label>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+  
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-button color="danger" class="ion-no-margin" expand="full" type="submit" [routerLink]="['/cart-finish']">ยืนยันการชำระเงิน</ion-button>
+</ion-footer>

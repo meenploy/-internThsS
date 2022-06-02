@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-item lines="full">
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-fab-button class="ion-align-self-start" size="small" id="alignment-button" color="danger">1</ion-fab-button>
+          </ion-col>
+          <ion-col>
+            <ion-fab-button class="ion-align-self-center" size="small" id="alignment-button" color="danger">2</ion-fab-button>
+          </ion-col>
+          <ion-col>
+            <ion-fab-button class="ion-align-self-end" size="small" id="alignment-button" color="danger">3</ion-fab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-item>
+</ion-header>
+<ion-content mode="ios">
+  
+  <ion-list lines="none" style="margin-top:10rem ;">
+    <ion-item color="tertiary">
+      <ion-label color="danger" >
+      <div class="ion-text-center">
+        <h1>จองห้องพักสำเร็จ!</h1></div></ion-label>
+    </ion-item>
+      <ion-card mode="ios">
+        <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/161159671.jpg?k=303338a6b1b5474e670d5b6cd98ae38bc44ad3576d9743cc516964f1aee5a679&o=&hp=1" />
+        <ion-label>
+          <div class="ion-text-center">
+            <h1>ห้องพัก Standard Queen Room</h1></div></ion-label>
+      </ion-card>
+  </ion-list>
+  <ion-label></ion-label>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-button color="danger" class="ion-no-margin" expand="full" type="submit" [routerLink]="['/home']">กลับไปหน้าหลัก</ion-button>
+</ion-footer>
